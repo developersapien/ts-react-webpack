@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "eslint-config-hueriyet",
+    "eslint-config-hueriyet/react-typescript",
+    "eslint-config-hueriyet/react-hooks"
+  ],
+  "rules": {
+    "import/extensions": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "camelcase": "warn",
+    "no-underscore-dangle": "warn",
+    "no-param-reassign": [
+      "error",
+      {
+        "ignorePropertyModificationsFor": ["draft"]
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "jsx-a11y/no-noninteractive-element-to-interactive-role": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
+  }
+}
